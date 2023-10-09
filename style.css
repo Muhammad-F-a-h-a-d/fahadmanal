@@ -1,0 +1,71 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.countdown {
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fireworks {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.fireworks {
+    width: 50px;
+    height: 100px;
+    background-color: #FFD700;
+    position: absolute;
+    transform-origin: center bottom;
+    animation: fireworks 0.5s ease-in-out infinite;
+}
+
+.fireworks:nth-child(2) {
+    left: 40px;
+    animation-delay: 0.1s;
+}
+
+.fireworks:nth-child(3) {
+    left: 80px;
+    animation-delay: 0.2s;
+}
+
+.fireworks:nth-child(4) {
+    left: 120px;
+    animation-delay: 0.3s;
+}
+
+.fireworks:nth-child(5) {
+    left: 160px;
+    animation-delay: 0.4s;
+}
+
+.fireworks:nth-child(6) {
+    left: 200px;
+    animation-delay: 0.5s;
+}
