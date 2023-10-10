@@ -28,44 +28,47 @@ body {
 }
 
 @keyframes fireworks {
-    0%, 100% {
-        transform: translateY(0);
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
     }
-    50% {
-        transform: translateY(-20px);
+    100% {
+        transform: translateY(-100px) rotate(360deg);
+        opacity: 0;
     }
 }
 
 .fireworks {
-    width: 50px;
-    height: 100px;
+    width: 10px;
+    height: 10px;
     background-color: #FFD700;
     position: absolute;
-    transform-origin: center bottom;
     animation: fireworks 0.5s ease-in-out infinite;
+    border-radius: 50%;
+    opacity: 0;
 }
 
 .fireworks:nth-child(2) {
-    left: 40px;
+    left: 15px;
     animation-delay: 0.1s;
 }
 
 .fireworks:nth-child(3) {
-    left: 80px;
+    left: 30px;
     animation-delay: 0.2s;
 }
 
 .fireworks:nth-child(4) {
-    left: 120px;
+    left: 45px;
     animation-delay: 0.3s;
 }
 
 .fireworks:nth-child(5) {
-    left: 160px;
+    left: 60px;
     animation-delay: 0.4s;
 }
 
 .fireworks:nth-child(6) {
-    left: 200px;
+    left: 75px;
     animation-delay: 0.5s;
 }
