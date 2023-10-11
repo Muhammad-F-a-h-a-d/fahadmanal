@@ -15,8 +15,13 @@ body {
     height: 100vh;
 }
 
+.logo {
+    height: 200px;
+    width: 200px;
+}
+
 .countdown {
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .timer {
