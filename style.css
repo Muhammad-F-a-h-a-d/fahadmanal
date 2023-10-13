@@ -25,6 +25,15 @@ body {
     width: 350px;
 }
 
+.nikkah{
+    display: flex;
+    flex-direction: row;
+}
+
+.inshallah{
+    margin: 10px;
+}
+
 .countdown {
     margin: 20px;
 }
